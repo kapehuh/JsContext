@@ -19,7 +19,7 @@ module.exports = [
       },
     },
     rules: {
-      "no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+      "no-unused-vars": ["error", { args: "none" }],
     },
   },
 ];

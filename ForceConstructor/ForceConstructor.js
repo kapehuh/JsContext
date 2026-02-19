@@ -1,4 +1,4 @@
-function ForceConstructor(_name, _age, _city) {
+function ForceConstructor(name, age, city) {
   if (!(this instanceof ForceConstructor)) {
     return new ForceConstructor(...arguments);
   }
