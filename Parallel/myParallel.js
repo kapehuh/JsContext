@@ -39,6 +39,7 @@ class Parallel {
     }
   }
 
+  //fix
   #runNext() {
     // Если уже завершили выполнение – ничего не делаем
     if (this.finished) return;
