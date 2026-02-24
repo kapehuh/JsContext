@@ -35,11 +35,11 @@ class Parallel {
     // Запускаем первые задачи, не превышая лимит параллельности
     const initialCount = Math.min(this.concurrency, this.tasks.length);
     for (let i = 0; i < initialCount; i++) {
-      this._runNext();
+      this.#runNext();
     }
   }
 
-  _runNext() {
+  #runNext() {
     // Если уже завершили выполнение – ничего не делаем
     if (this.finished) return;
 
@@ -67,7 +67,7 @@ class Parallel {
         this.completed++;
 
         // После завершения задачи пытаемся запустить следующую
-        this._runNext();
+        this.#runNext();
       });
     }
   }
