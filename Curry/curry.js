@@ -1,3 +1,4 @@
+//PR
 function curry(fn) {
   const arity = fn.length;
   if (arity === 0) return fn;
