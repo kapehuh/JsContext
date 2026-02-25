@@ -1,4 +1,4 @@
-//main func
+//PR
 function ForceConstructor(name, age, city) {
   if (!(this instanceof ForceConstructor)) {
     return new ForceConstructor(...arguments);

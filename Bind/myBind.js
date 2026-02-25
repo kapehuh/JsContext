@@ -1,3 +1,4 @@
+//PR
 Function.prototype.myBind = function (context) {
   // исходная функция
   var fn = this;
